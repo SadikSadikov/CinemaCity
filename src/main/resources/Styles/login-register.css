@@ -1,0 +1,118 @@
+.login-register-form-image {
+
+    -fx-background-image: url('file:C:/Users/USER/IdeaProjects/CinemaCity/Image/login-register-background.png');
+    -fx-background-position: right top;
+    -fx-background-repeat: no-repeat;
+
+}
+
+.login-register-form-background-color{
+
+    -fx-background-color: #000000
+
+}
+
+.login-box {
+
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: white;
+    -fx-background-color: rgba(5, 5, 5, 0.9);
+
+}
+
+.inner-shadow{
+
+    -fx-effect: innershadow( gaussian, rgba( 0, 0, 0, 0.5 ), 10, 0, 5, 5 );
+
+}
+
+.login-text-field-image{
+
+    -fx-background-image: url('file:C:/Users/USER/IdeaProjects/CinemaCity/Image/user.png');
+    -fx-background-size: 20px;
+    -fx-background-position: right +7px center;
+    -fx-background-repeat: no-repeat;
+
+}
+
+.login-password-field-image{
+
+    -fx-background-image: url('file:C:/Users/USER/IdeaProjects/CinemaCity/Image/padlock.png');
+    -fx-background-size: 20px;
+    -fx-background-position: right +7px center;
+    -fx-background-repeat: no-repeat;
+
+}
+
+.prompt-text {
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: white;
+}
+
+.button-login-register{
+
+    -fx-background-color: rgba(25, 25, 25, 0.5);
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-background-color: linear-gradient(to top, #111111, #444343);
+    -fx-effect: innershadow( gaussian, rgba( 0, 0, 0, 0.5 ), 10, 0, 5, 5 );
+
+}
+
+.button-close {
+    -fx-background-image: url('file:C:/Users/USER/IdeaProjects/CinemaCity/Image/close.png');
+    -fx-background-size: 15px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+    -fx-effect: innershadow( gaussian, rgba( 0, 0, 0, 0.5 ), 10, 0, 5, 5 );
+    -fx-background-position: center;
+}
+
+.button-minimize {
+    -fx-background-image: url('file:C:/Users/USER/IdeaProjects/CinemaCity/Image/minimize.png');
+    -fx-background-size: 15px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+    -fx-effect: innershadow( gaussian, rgba( 0, 0, 0, 0.5 ), 10, 0, 5, 5 );
+    -fx-background-position: center;
+}
+
+.forgot-dialog {
+
+    -fx-background-radius: 20px;
+    -fx-background-color: rgba(9, 9, 9);
+    -fx-border-radius: 20px;
+    -fx-border-color: white;
+
+}
+
+.forgot-dialog-button {
+    -fx-background-color: rgba(25, 25, 25, 0.5);
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-background-color: linear-gradient(to top, #111111, #444343);
+    -fx-effect: innershadow( gaussian, rgba( 0, 0, 0, 0.5 ), 10, 0, 5, 5 );
+
+    -fx-min-width: 100px; /* Минимална ширина на бутона */
+    -fx-min-height: 40px; /* Минимална височина на бутона */
+    -fx-pref-width: 150px; /* Предпочитана ширина на бутона */
+    -fx-pref-height: 30px; /* Предпочитана височина на бутона */
+    -fx-max-width: 300px; /* Максимална ширина на бутона */
+    -fx-max-height: 80px; /* Максимална височина на бутона */
+}
+
+.forgot-dialog-textField {
+
+    -fx-min-width: 100px;
+    -fx-min-height: 20px;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 35px;
+    -fx-max-width: 300px;
+    -fx-max-height: 80px;
+
+}
+
+
+
+

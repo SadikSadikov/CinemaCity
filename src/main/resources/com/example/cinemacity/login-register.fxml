@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cinemacity.JFX.Controller.LoginRegisterController">
+   <children>
+      <AnchorPane fx:id="anchorPaneMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="744.0" styleClass="login-register-form-background-color" stylesheets="@../../../Styles/login-register.css">
+         <children>
+            <JFXButton fx:id="buttonClose" layoutX="715.0" prefHeight="27.0" prefWidth="30.0" ripplerFill="WHITE" styleClass="button-close" stylesheets="@../../../Styles/login-register.css" text="." />
+            <JFXButton fx:id="buttonMinimize" layoutX="684.0" layoutY="-1.0" prefHeight="30.0" prefWidth="30.0" ripplerFill="WHITE" styleClass="button-minimize" stylesheets="@../../../Styles/login-register.css" text="." />
+            <StackPane fx:id="stackPaneLRForm" layoutY="29.0" prefHeight="590.0" prefWidth="744.0">
+               <children>
+                  <AnchorPane fx:id="anchorPaneLoginRegisterForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="744.0" stylesheets="@../../../Styles/login-register.css">
+                     <styleClass>
+                        <String fx:value="login-register-form-background-color" />
+                        <String fx:value="login-register-form-image" />
+                     </styleClass>
+                     <children>
+                        <AnchorPane fx:id="anchorPaneLoginRegister" layoutX="233.0" layoutY="103.0" prefHeight="374.0" prefWidth="278.0" styleClass="login-box" stylesheets="@../../../Styles/login-register.css">
+                           <children>
+                              <JFXButton fx:id="buttonSignIn" alignment="CENTER" layoutX="31.0" layoutY="14.0" onAction="#buttonSignInAction" prefHeight="43.0" prefWidth="106.0" ripplerFill="WHITE" text="SIGN IN" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="buttonSignUp" alignment="CENTER" layoutX="140.0" layoutY="14.0" onAction="#buttonSignUpAction" prefHeight="43.0" prefWidth="106.0" ripplerFill="WHITE" text="SIGN UP" textFill="#666666">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Line endX="5.199981689453125" endY="-32.40000915527344" layoutX="134.0" layoutY="79.0" startX="5.199981689453125" startY="-53.19999694824219" stroke="WHITE" />
+                              <AnchorPane fx:id="anchorPaneLogin" layoutX="2.0" layoutY="81.0" prefHeight="300.0" prefWidth="272.0">
+                                 <children>
+                                    <JFXTextField fx:id="textFieldUsernameLogin" focusColor="#696969" labelFloat="true" layoutX="31.0" layoutY="15.0" prefHeight="35.0" prefWidth="210.0" promptText="Username" stylesheets="@../../../Styles/login-register.css" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="14.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="login-text-field-image" />
+                                          <String fx:value="inner-shadow" />
+                                          <String fx:value="prompt-text" />
+                                       </styleClass>
+                                    </JFXTextField>
+                                    <JFXPasswordField fx:id="passwordFieldPasswordLogin" focusColor="DIMGRAY" labelFloat="true" layoutX="31.0" layoutY="80.0" prefHeight="35.0" prefWidth="210.0" promptText="Password" stylesheets="@../../../Styles/login-register.css" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="14.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="inner-shadow" />
+                                          <String fx:value="login-password-field-image" />
+                                          <String fx:value="prompt-text" />
+                                       </styleClass>
+                                    </JFXPasswordField>
+                                    <JFXCheckBox fx:id="checkBoxRememberMe" layoutX="31.0" layoutY="145.0" prefHeight="18.0" prefWidth="113.0" styleClass="inner-shadow" stylesheets="@../../../Styles/login-register.css" text="Remember Me" textFill="WHITE" unCheckedColor="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </JFXCheckBox>
+                                    <Hyperlink fx:id="hyperlinkForgotPassword" layoutX="144.0" layoutY="145.0" onAction="#hyperlinkForgotPasswordAction" styleClass="inner-shadow" stylesheets="@../../../Styles/login-register.css" text="Forgot Password?" textFill="#f4f4f4">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Hyperlink>
+                                    <JFXButton fx:id="buttonLogin" alignment="CENTER" buttonType="RAISED" layoutX="11.0" layoutY="199.0" onAction="#buttonLoginAction" prefHeight="38.0" prefWidth="250.0" ripplerFill="WHITE" styleClass="button-login-register" stylesheets="@../../../Styles/login-register.css" text="Login" textFill="#fafafa">
+                                       <font>
+                                          <Font name="Arial" size="14.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label fx:id="labelMessageLogin" alignment="CENTER" layoutX="7.0" layoutY="246.0" prefHeight="43.0" prefWidth="258.0" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchorPaneRegister" layoutX="2.0" layoutY="81.0" prefHeight="300.0" prefWidth="272.0" visible="false">
+                                 <children>
+                                    <JFXPasswordField fx:id="passwordFieldPasswordRegister" focusColor="DIMGRAY" labelFloat="true" layoutX="31.0" layoutY="80.0" prefHeight="35.0" prefWidth="210.0" promptText="Password" stylesheets="@../../../Styles/login-register.css" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="14.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="inner-shadow" />
+                                          <String fx:value="login-password-field-image" />
+                                          <String fx:value="prompt-text" />
+                                       </styleClass>
+                                    </JFXPasswordField>
+                                    <Label fx:id="labelMessageRegister" alignment="CENTER" layoutX="7.0" layoutY="249.0" prefHeight="43.0" prefWidth="258.0" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXPasswordField fx:id="passwordFieldConfirmPasswordRegister" focusColor="DIMGRAY" labelFloat="true" layoutX="31.0" layoutY="145.0" prefHeight="35.0" prefWidth="210.0" promptText="Confirm Password" stylesheets="@../../../Styles/login-register.css" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="14.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="inner-shadow" />
+                                          <String fx:value="login-password-field-image" />
+                                          <String fx:value="prompt-text" />
+                                       </styleClass>
+                                    </JFXPasswordField>
+                                    <JFXButton fx:id="buttonRegister" alignment="CENTER" buttonType="RAISED" layoutX="11.0" layoutY="199.0" onAction="#buttonRegisterAction" prefHeight="38.0" prefWidth="250.0" ripplerFill="WHITE" styleClass="button-login-register" stylesheets="@../../../Styles/login-register.css" text="Register" textFill="#fafafa">
+                                       <font>
+                                          <Font name="Arial" size="14.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="textFieldUsernameRegister" focusColor="#696969" labelFloat="true" layoutX="31.0" layoutY="15.0" prefHeight="35.0" prefWidth="210.0" promptText="Username" stylesheets="@../../../Styles/login-register.css" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="14.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="prompt-text" />
+                                          <String fx:value="login-text-field-image" />
+                                          <String fx:value="inner-shadow" />
+                                       </styleClass>
+                                    </JFXTextField>
+                                 </children>
+                              </AnchorPane>
+                              <Line fx:id="lineSignIn" endX="-20.499984741210938" layoutX="144.0" layoutY="47.0" startX="-100.0" stroke="WHITE" />
+                              <Line fx:id="lineSingUp" endX="-20.499984741210938" layoutX="253.0" layoutY="47.0" startX="-100.0" stroke="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

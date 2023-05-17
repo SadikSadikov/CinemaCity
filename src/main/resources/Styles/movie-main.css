@@ -1,0 +1,63 @@
+.menu-box {
+
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: white;
+    -fx-background-color: rgba(10, 10, 10, 0.7);
+
+}
+
+.button-hours {
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: white;
+}
+
+.button-back {
+    -fx-background-image: url('file:C:/Users/USER/IdeaProjects/CinemaCity/Image/back-left-arrow.png');
+    -fx-background-size: 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+    -fx-background-position: center;
+}
+
+.button-add-card {
+    -fx-background-image: url("file:C:/Users/USER/IdeaProjects/CinemaCity/Image/add.png");
+    -fx-background-size: 30px;
+    -fx-background-position: top +7px left +70px;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: linear-gradient(to bottom left, #FF9900, #FFCC00, #CCFF00, #00CCFF, #FF00FF);
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.toggle-button .text {
+    -fx-opacity: 0;
+}
+
+.anchor-pane-card {
+    -fx-border-color: linear-gradient(to bottom left, #FF9900, #FFCC00, #CCFF00, #00CCFF, #FF00FF);
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.button-pay {
+    -fx-border-color: linear-gradient(to bottom left, #FF9900, #FFCC00, #CCFF00, #00CCFF, #FF00FF);
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.button-close-card {
+    -fx-background-image: url('file:C:/Users/USER/IdeaProjects/CinemaCity/Image/close.png');
+    -fx-background-size: 10px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+    -fx-background-position: center;
+}
+
+.button-close-card .text{
+    -fx-opacity: 0;
+}
+
+
+

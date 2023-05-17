@@ -1,0 +1,10 @@
+
+U
+java:S1118":Add a private constructor to hide the implicit public one.(‡ºŠŒùÿÿÿÿ
+B
+java:S1128"%Remove this unused import 'java.awt'.(ï´µ©8ßÏ¤Ôù0
+>
+java:S1604?"(Make this anonymous inner class a lambda(¼‹²Û
+C
+java:S1604F"(Make this anonymous inner class a lambda(…¿¹Òşÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(íøÏ§

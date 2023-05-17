@@ -1,0 +1,18 @@
+
+t	java:S115c"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(°´¡‚ıÿÿÿÿ
+o	java:S115i"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ïàîë
+t	java:S115o"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(»¬üÆúÿÿÿÿ
+o	java:S115q"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÃØÖ
+K
+java:S1128"6Remove this unused import 'javafx.animation.KeyFrame'.(æ™†v
+L
+java:S1128	"6Remove this unused import 'javafx.animation.KeyValue'.(©ı˜
+Q
+java:S1128"6Remove this unused import 'javafx.animation.Timeline'.(˜‰ë÷øÿÿÿÿ
+V
+java:S1128";Remove this unused import 'javafx.scene.control.ButtonBar'.(Ú·ŠÓÿÿÿÿÿ
+N
+java:S1128"3Remove this unused import 'javafx.scene.text.Text'.(˜ÿ‡Üşÿÿÿÿ
+R
+java:S1128#"7Remove this unused import 'javafx.scene.layout.Region'.(ñ³Áİıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(íøÏ§

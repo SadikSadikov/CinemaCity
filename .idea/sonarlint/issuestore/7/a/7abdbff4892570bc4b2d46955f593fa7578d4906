@@ -1,0 +1,14 @@
+
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+u
+java:S1128"ZRemove this unused import 'com.example.cinemacity.HibernateOracle.Model.ScreeningsEntity'.(Ÿ½âşÿÿÿÿ
+D
+java:S1128
+"/Remove this unused import 'java.sql.Timestamp'.(èò½+
+K
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ
+O
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ç‹ÖÒıÿÿÿÿ
+^
+java:S22593"IA "NullPointerException" could be thrown; "transaction" is nullable here.(§¸ª"

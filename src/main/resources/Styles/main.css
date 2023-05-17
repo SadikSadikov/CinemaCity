@@ -1,0 +1,160 @@
+.outerAnchorPane {
+    -fx-background-color: #1c1c1c;
+    -fx-border-color: #3c3c3c;
+    -fx-border-width: 6px;
+}
+
+.titlePane {
+    -fx-background-color: #1c1c1c;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+    -fx-background-radius: 0px 0px 10px 10px;
+
+     -fx-background-image: url('file:C:/Users/USER/IdeaProjects/CinemaCity/Image/icon-monkey-transparent-background.png');
+     -fx-background-size: 70px;
+     -fx-background-position: left +20px center;
+     -fx-background-repeat: no-repeat
+}
+
+.slideshow-pane{
+    -fx-background-color: #1c1c1c;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+    -fx-background-radius: 10px
+}
+
+.button-close {
+    -fx-background-image: url('file:C:/Users/USER/IdeaProjects/CinemaCity/Image/close.png');
+    -fx-background-size: 15px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+    -fx-effect: innershadow( gaussian, rgba( 0, 0, 0, 0.5 ), 10, 0, 5, 5 );
+    -fx-background-position: center;
+}
+
+.button-minimize {
+    -fx-background-image: url('file:C:/Users/USER/IdeaProjects/CinemaCity/Image/minimize.png');
+    -fx-background-size: 15px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+    -fx-effect: innershadow( gaussian, rgba( 0, 0, 0, 0.5 ), 10, 0, 5, 5 );
+    -fx-background-position: center;
+}
+
+.scroll-pane {
+    -fx-background-color: #1c1c1c; /* цвят на фона */
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: #1c1c1c; /* цвят на фона на съдържанието */
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: #2e2e2e; /* цвят на фона на скрол баровете */
+    -fx-background-radius: 0; /* премахване на закръглените ъгли на скрол баровете */
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #4d4d4d; /* цвят на бутона за плъзгане на вертикален скрол бар */
+}
+
+.scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: #4d4d4d; /* цвят на бутона за плъзгане на хоризонтален скрол бар */
+}
+
+.scroll-pane .scroll-bar:vertical .track,
+.scroll-pane .scroll-bar:horizontal .track {
+    -fx-background-color: #2e2e2e;
+}
+
+.scroll-pane .scroll-bar:vertical .increment-arrow,
+.scroll-pane .scroll-bar:vertical .decrement-arrow,
+.scroll-pane .scroll-bar:horizontal .increment-arrow,
+.scroll-pane .scroll-bar:horizontal .decrement-arrow {
+    -fx-background-color: #1c1c1c; /* цвят на бутоните за навигация на скрол баровете */
+}
+
+.scroll-pane .focus-indicator {
+    -fx-focus-color: transparent; /* премахване на цвета на фокуса на скрол панела */
+}
+
+.scroll-pane .scroll-bar:vertical .increment-button,
+.scroll-pane .scroll-bar:vertical .decrement-button,
+.scroll-pane .scroll-bar:horizontal .increment-button,
+.scroll-pane .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent; /* премахване на бутоните за навигация на скрол баровете */
+}
+
+.scroll-pane .corner {
+    -fx-background-color: #1c1c1c; /* цвят на ъглите */
+}
+
+
+/* Стилове за основния контейнер на GridPane */
+.grid-pane {
+    -fx-background-color: #222222; /* Цвят на фона */
+    -fx-padding: 10px; /* Отстъп на ръбовете */
+}
+
+/* Стилове за елементите на GridPane */
+.grid-pane .grid-cell {
+    -fx-background-color: #333333; /* Цвят на фона на клетките */
+    -fx-text-fill: #ffffff; /* Цвят на текста в клетките */
+    -fx-padding: 10px; /* Отстъп на ръбовете на клетките */
+}
+
+/* Стилове за хоризонталните и вертикалните линии на GridPane */
+.grid-pane .grid-horizontal-line,
+.grid-pane .grid-vertical-line {
+    -fx-stroke: #aaaaaa; /* Цвят на линиите */
+}
+
+/* Стилове за текста на заглавието на клетките */
+.grid-pane .grid-header {
+    -fx-background-color: #444444; /* Цвят на фона на заглавията */
+    -fx-text-fill: #ffffff; /* Цвят на текста на заглавията */
+    -fx-padding: 10px; /* Отстъп на ръбовете на заглавията */
+}
+
+.button-search{
+    -fx-background-image: url('file:C:/Users/USER/IdeaProjects/CinemaCity/Image/search.png');
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+    -fx-background-position: center;
+}
+
+.button-close-textField{
+    -fx-background-image: url('file:C:/Users/USER/IdeaProjects/CinemaCity/Image/close.png');
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+    -fx-background-position: center;
+}
+
+.text-field-search {
+    -fx-background-color: transparent; /* цвят на фона */
+    -fx-text-fill: white; /* цвят на текста */
+    -fx-border-color: #808080; /* цвят на рамката */
+    -fx-border-width: 0 0 1 0; /* дебелина на рамката */
+}
+
+/* Стилизиране на TextField при фокусирано състояние */
+.text-field-search:focused {
+    -fx-border-color: white; /* цвят на рамката */
+}
+
+.auto-complete-popup {
+    -fx-background-color: black;
+    -fx-border-color: royalblue;
+    -fx-border-width: 5;
+}
+
+.button-logout {
+    -fx-background-image: url('file:C:/Users/USER/IdeaProjects/CinemaCity/Image/logout.png');
+        -fx-background-size: 20px;
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: 100%;
+        -fx-background-position: center;
+}
+
+
+

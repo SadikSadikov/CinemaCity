@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPaneRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="767.0" prefWidth="1050.0" styleClass="outerAnchorPane" stylesheets="@../../../Styles/main.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cinemacity.JFX.Controller.MainController">
+   <children>
+      <AnchorPane fx:id="anchorPaneRoot" prefHeight="698.0" prefWidth="1083.0">
+         <children>
+            <AnchorPane prefHeight="84.0" prefWidth="1038.0" styleClass="titlePane">
+               <children>
+                  <JFXButton fx:id="buttonClose" layoutX="978.0" layoutY="-1.0" prefHeight="30.0" prefWidth="60.0" ripplerFill="WHITE" styleClass="button-close" stylesheets="@../../../Styles/main.css" text="." />
+                  <JFXButton fx:id="buttonMinimize" layoutX="918.0" layoutY="-1.0" prefHeight="30.0" prefWidth="60.0" ripplerFill="WHITE" styleClass="button-minimize" stylesheets="@../../../Styles/main.css" text="." />
+                  <Label fx:id="labelLogo" layoutX="98.0" layoutY="29.0" text="CinemaCity" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="hBoxSearch" alignment="TOP_RIGHT" layoutX="574.0" layoutY="30.0" prefHeight="30.0" prefWidth="218.0">
+                     <children>
+                        <JFXButton fx:id="buttonCloseTextField" prefHeight="30.0" prefWidth="52.0" styleClass="button-close-textField" text="." />
+                        <TextField fx:id="textFieldSearch" styleClass="text-field-search">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </TextField>
+                        <JFXButton fx:id="buttonSearch" prefHeight="37.0" prefWidth="42.0" styleClass="button-search" text="." />
+                     </children></HBox>
+                  <JFXButton fx:id="buttonSignOut" layoutX="821.0" layoutY="30.0" onAction="#buttonSignOutAction" prefHeight="30.0" prefWidth="34.0" styleClass="button-logout" text="." />
+               </children></AnchorPane>
+            <ScrollPane layoutY="313.0" prefHeight="442.0" prefWidth="1038.0">
+               <content>
+                  <AnchorPane fx:id="anchorPaneScrollbar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2001.0" prefWidth="1022.0" style="-fx-background-color: #1c1c1c;" stylesheets="@../../../Styles/main.css">
+                     <children>
+                        <GridPane fx:id="gridPaneMostViewedMovies" hgap="5.0" layoutX="22.0" layoutY="60.0" prefHeight="600.0" prefWidth="980.0" styleClass="grid-pane" vgap="5.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane fx:id="gridPaneMovies" alignment="CENTER" hgap="5.0" layoutX="22.0" layoutY="780.0" prefHeight="1200.0" prefWidth="980.0" styleClass="grid-pane" vgap="5.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label layoutX="119.0" layoutY="13.0" text="POPULAR RIGHT NOW" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Line endX="65.0" layoutX="42.0" layoutY="22.0" startX="-18.0" stroke="WHITE" strokeWidth="2.0" />
+                        <Line endX="650.0" fill="BLACK" layoutX="352.0" layoutY="22.0" startX="-45.0" stroke="WHITE" strokeWidth="2.0" />
+                        <Label layoutX="119.0" layoutY="709.0" prefHeight="20.0" prefWidth="85.0" text="RANDOM" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Line endX="65.0" layoutX="42.0" layoutY="720.0" startX="-18.0" stroke="WHITE" strokeWidth="2.0" />
+                        <Line endX="748.0" fill="BLACK" layoutX="248.0" layoutY="719.0" startX="-44.0" stroke="WHITE" strokeWidth="2.0" />
+                     </children>
+                  </AnchorPane>
+               </content></ScrollPane>
+            <StackPane fx:id="stackPaneSlideShow" layoutX="7.0" layoutY="97.0" prefHeight="200.0" prefWidth="1025.0" styleClass="slideshow-pane" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

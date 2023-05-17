@@ -1,0 +1,58 @@
+.body {
+    -fx-background-color: linear-gradient(to right , #cb2d3e , #ef473a);
+}
+
+.searchBox {
+    -fx-position: absolute;
+    -fx-top: 50%;
+    -fx-left: 50%;
+    -fx-translate-x: -50%;
+    -fx-translate-y: 50%;
+    -fx-background-color: #2f3640;
+    -fx-min-height: 40px;
+    -fx-border-radius: 40px;
+    -fx-padding: 10px;
+}
+
+.searchBox:hover > .searchInput {
+    -fx-pref-width: 240px;
+    -fx-padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+    -fx-background-color: white;
+    -fx-text-fill: #2f3640;
+}
+
+.searchButton {
+    -fx-text-fill: white;
+    -fx-float: right;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-border-radius: 50%;
+    -fx-background-color: #2f3640;
+    -fx-display: flex;
+    -fx-justify-content: center;
+    -fx-align-items: center;
+    -fx-transition: 0.4s;
+}
+
+.searchInput {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-float: left;
+    -fx-padding: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-transition: 0.4s;
+    -fx-line-spacing: 40px;
+    -fx-pref-width: 0px;
+}
+
+@media screen and (max-width: 620px) {
+    .searchBox:hover > .searchInput {
+        -fx-pref-width: 150px;
+        -fx-padding: 0 6px;
+    }
+}
